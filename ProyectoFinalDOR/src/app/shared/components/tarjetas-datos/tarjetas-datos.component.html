@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="stylesheet" href="tarjetas-datos.component.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  
+</head>
+<body class="bg-body d-flex justify-content-center align-items-center vw-50 vh-100">
+
+  <div class="d-flex flex-row justify-content-center gap-4 w-25 h-50">
+
+    <div class="d-flex flex-column align-items-between pt-4  gap-4 ">
+
+      <div class="d-flex flex-row position-relative top-0 pt-2 pb-4 gap-4 h-75 ">
+        
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
+
+          <img [src]="gifs[0].images.downsized_medium.url" [alt]="gifs[0].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
+
+          <div class="fs-6 fw-light">Last Week - 36hrs</div> 
+
+        </div>
+
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
+
+          <img [src]="gifs[1].images.downsized_medium.url" [alt]="gifs[1].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
+          <div class="fs-6 fw-light">Last Week - 8hrs</div> 
+
+        </div>
+
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
+
+          <img [src]="gifs[2].images.downsized_medium.url" [alt]="gifs[2].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
+          <div class="fs-6 fw-light">Last Week - 7hrs</div> 
+
+        </div>
+        
+
+      </div>
+
+      <div class="d-flex flex-row position-relative top-2 pt-2 pb-3 gap-4 h-75  ">
+
+        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+
+          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-success rounded-4 position-absolute   top-0 start-0 translate-middle-y w-100">
+
+            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-exercise.svg" alt="">
+
+          </div>
+
+          <div class="d-flex flex-row justify-content-between align-items-center m-0  pb-2">
+
+              <div class="fs-6 ">Exercise</div>
+              <div class="display-6 fw-light mb-3">...</div>
+  
+          </div>
+
+          <div class="display-4 pe-5 me-4">4hrs</div> 
+          <div class="fs-6 fw-light">Last Week - 5hrs</div> 
+
+        </div>
+
+        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+
+          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-info rounded-4 position-absolute   top-0 start-0 translate-middle-y w-100">
+
+            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-social.svg" alt="">
+
+          </div>
+
+          <div class="d-flex flex-row justify-content-between align-items-center m-0 pb-2">
+
+              <div class="fs-6 ">Social</div>
+              <div class="display-6 fw-light mb-3">...</div>
+  
+          </div>
+
+          <div class="display-4 pe-5 me-4">5hrs</div> 
+          <div class="fs-6 fw-light">Last Week - 10hrs</div> 
+
+        </div>
+
+        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+
+          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-danger rounded-4 position-absolute  top-0 start-0 translate-middle-y w-100">
+
+            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-self-care.svg" alt="">
+
+          </div>
+
+          <div class="d-flex flex-row justify-content-between align-items-center m-0 pb-2">
+
+              <div class="fs-6 ">Self-Care</div>
+              <div class="display-6 fw-light mb-3">...</div>
+  
+          </div>
+
+          <div class="display-4 pe-5 me-4">2hrs</div> 
+          <div class="fs-6 fw-light">Last Week - 2hrs</div> 
+
+        </div>
+       
+
+      </div>
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
