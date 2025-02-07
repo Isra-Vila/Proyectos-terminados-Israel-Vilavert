@@ -7,12 +7,15 @@ import { GifsService } from '../../services/gifs.service';
     input::placeholder {
       color:rgb(255, 255, 255); 
     } 
+    h1{
+      text-align: center;
+    }
   </style>
-    <h5 class="text-light">Buscar:</h5>
+    <h1 class="text-light">Tele-Gif</h1>
     <input 
       type="text" 
       class="form-control text-white" 
-      placeholder="Buscar gifs..."
+      placeholder="Buscar..."
       (keyup.enter)="searchTag()"
       #txtTagInput
     >

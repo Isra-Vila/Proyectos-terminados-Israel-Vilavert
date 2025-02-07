@@ -9,98 +9,82 @@
 
   
 </head>
-<body class="bg-body d-flex justify-content-center align-items-center vw-50 vh-100">
+<body class="bg-body d-flex justify-content-center align-items-center vw-50 ">
 
   <div class="d-flex flex-row justify-content-center gap-4 w-25 h-50">
 
     <div class="d-flex flex-column align-items-between pt-4  gap-4 ">
 
-      <div class="d-flex flex-row position-relative top-0 pt-2 pb-4 gap-4 h-75 ">
+      <div *ngIf="gifs && gifs.length > 0" class="d-flex flex-row position-relative top-0 pt-2 pb-4 gap-4 h-75 ">
         
-        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
+        <div  class=" position-relative d-flex flex-column bg-dark rounded-4  p-4 pt-2">
+          
+          <div class="d-flex flex-row overflow-hidden justify-content-center text-bg-primary rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[0].title}}</p>
+          </div>
 
-          <img [src]="gifs[0].images.downsized_medium.url" [alt]="gifs[0].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
-
-          <div class="fs-6 fw-light">Last Week - 36hrs</div> 
-
-        </div>
-
-        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
-
-          <img [src]="gifs[1].images.downsized_medium.url" [alt]="gifs[1].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
-          <div class="fs-6 fw-light">Last Week - 8hrs</div> 
+          <img [src]="gifs[0].images.downsized_medium.url" [alt]="gifs[0].title">
+          <img src = "../../../../assets/botones.png" alt ="botones" >
 
         </div>
 
-        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-2">
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4  p-4 pt-2">
 
-          <img [src]="gifs[2].images.downsized_medium.url" [alt]="gifs[2].title" class=" ms-5 me-5 pe-5 pb-5  rounded-4">
-          <div class="fs-6 fw-light">Last Week - 7hrs</div> 
+          <div class="d-flex flex-row overflow-hidden justify-content-center text-bg-secondary rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[1].title}}</p>
+          </div>
+
+          <img [src]="gifs[1].images.downsized_medium.url" [alt]="gifs[1].title">
+          <img src = "../../../../assets/botones.png" alt ="botones" >
 
         </div>
-        
+
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4  p-4 pt-2">
+
+          <div class="d-flex flex-row overflow-hidden justify-content-center text-bg-warning rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[2].title}}</p>
+          </div>
+
+          <img [src]="gifs[2].images.downsized_medium.url" [alt]="gifs[2].title" >
+          <img src = "../../../../assets/botones.png" alt ="botones" >
+
+        </div>
 
       </div>
 
-      <div class="d-flex flex-row position-relative top-2 pt-2 pb-3 gap-4 h-75  ">
+      <div *ngIf="gifs && gifs.length > 0" class="d-flex flex-row position-relative top-2 pt-2 pb-3 gap-4 h-75  ">
 
-        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4  p-4 pt-2">
 
-          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-success rounded-4 position-absolute   top-0 start-0 translate-middle-y w-100">
-
-            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-exercise.svg" alt="">
-
+          <div class="d-flex flex-row overflow-hidden justify-content-center text-bg-success rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[3].title}}</p>
           </div>
 
-          <div class="d-flex flex-row justify-content-between align-items-center m-0  pb-2">
-
-              <div class="fs-6 ">Exercise</div>
-              <div class="display-6 fw-light mb-3">...</div>
-  
-          </div>
-
-          <div class="display-4 pe-5 me-4">4hrs</div> 
-          <div class="fs-6 fw-light">Last Week - 5hrs</div> 
+          <img [src]="gifs[3].images.downsized_medium.url" [alt]="gifs[3].title" >
+          <img src = "../../../../assets/botones.png" alt ="botones" >
 
         </div>
 
-        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4  p-4 pt-2">
 
-          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-info rounded-4 position-absolute   top-0 start-0 translate-middle-y w-100">
-
-            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-social.svg" alt="">
-
+          <div style="background-color: blueviolet; color: black;" class="d-flex flex-row overflow-hidden justify-content-center rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[4].title}}</p>
           </div>
 
-          <div class="d-flex flex-row justify-content-between align-items-center m-0 pb-2">
+          <img [src]="gifs[4].images.downsized_medium.url" [alt]="gifs[4].title" >
 
-              <div class="fs-6 ">Social</div>
-              <div class="display-6 fw-light mb-3">...</div>
-  
-          </div>
-
-          <div class="display-4 pe-5 me-4">5hrs</div> 
-          <div class="fs-6 fw-light">Last Week - 10hrs</div> 
+          <img src = "../../../../assets/botones.png" alt ="botones" >
 
         </div>
 
-        <div class=" position-relative  d-flex flex-column  bg-dark rounded-4 text-white p-4 pt-3">
+        <div  class=" position-relative d-flex flex-column  bg-dark rounded-4  p-4 pt-2">
 
-          <div class="d-flex flex-row overflow-hidden justify-content-end pt-3 pb-5 text-bg-danger rounded-4 position-absolute  top-0 start-0 translate-middle-y w-100">
-
-            <img class="img-fluid position-absolute translate-middle-y top-50  me-3 ps-5 pb-5 pt-4 w-50 display-6" src="assets/icon-self-care.svg" alt="">
-
+          <div class="d-flex flex-row overflow-hidden justify-content-center text-bg-danger rounded-4 position-absolute  start-0 translate-middle-y w-100">
+            <p class="card-text">{{gifs[5].title}}</p>
           </div>
 
-          <div class="d-flex flex-row justify-content-between align-items-center m-0 pb-2">
-
-              <div class="fs-6 ">Self-Care</div>
-              <div class="display-6 fw-light mb-3">...</div>
-  
-          </div>
-
-          <div class="display-4 pe-5 me-4">2hrs</div> 
-          <div class="fs-6 fw-light">Last Week - 2hrs</div> 
+          <img [src]="gifs[5].images.downsized_medium.url" [alt]="gifs[5].title" >
+          <img src = "../../../../assets/botones.png" alt ="botones" >
 
         </div>
        
